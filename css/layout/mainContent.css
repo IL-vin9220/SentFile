@@ -1,0 +1,11 @@
+.main-header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.main-content{
+    width: 100%;
+    height: calc(100% - 50px);
+}

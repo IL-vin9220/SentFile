@@ -1,0 +1,61 @@
+.main-header-driver{
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: rgba(215, 215, 215, 0.611);
+    border-radius: 10px;
+}
+
+.main-header-driver>.header-toolbar-left{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-header-driver>.header-toolbar-right{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-header-driver>.header-toolbar-right>*+*{
+    margin-left: 15px;
+}
+
+.main-header-driver>.header-toolbar-right>.status{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(59, 255, 59);
+}
+
+.main-header-driver>.header-toolbar-left>.client-id{
+    display: flex;
+    align-items: center;
+}
+
+.main-header-driver>.header-toolbar-right>.partner-id{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.main-header-driver>.header-toolbar-left>.client-id>*+*{
+    margin-left: 15px;
+}
+
+.main-header-driver>.header-toolbar-right>.partner-id>*+*{
+    margin-left: 15px;
+}
+
+.main-header-driver>.header-toolbar-right>.connect-status:hover{
+    cursor: pointer;
+    animation: toRed 1.2s forwards;
+}
+
+@keyframes toRed{
+    from {color: black;}
+    to {color: red;}
+}
