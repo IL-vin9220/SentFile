@@ -21,6 +21,14 @@ body{
     align-items: center;
 }
 
+.fi{
+    cursor: pointer;
+}
+
+.fi+.fi{
+    margin-left: 15px;
+}
+
 .sidebar{
     width: 200px;
     height: 100%;
