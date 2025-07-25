@@ -115,7 +115,16 @@
     height: 50px;
     position: relative;
     display: grid;
-    grid-template-columns: 30px minmax(200px, calc(100% -  30px - 180px - 150px - 150px - 80px - 180px)) minmax(150px, 180px) minmax(130px, 150px) minmax(130px, 150px) 80px 180px;
+    grid-template-columns: 
+    30px 
+    minmax(200px, calc(100% -  30px - 180px - 150px - 150px - 80px - 180px)) 
+
+    minmax(150px, 180px) minmax(130px, 150px) 
+
+    minmax(130px, 150px) 
+
+    80px 180px;
+    align-items: center;
 }
 
 .main-content-driver>.main-content-nuclear-driver>.table .row>*+*{
@@ -160,6 +169,21 @@
 .main-content-driver>.main-content-nuclear-driver>.table .row:hover .hover-row{
     visibility: visible;
     opacity: 1;
+}
+
+.main-content-driver>.main-content-foot-driver{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-content-driver>.main-content-foot-driver>.foot-driver-toolbar-left{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 @keyframes toRed{
